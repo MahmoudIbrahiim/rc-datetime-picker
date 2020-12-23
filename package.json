@@ -29,6 +29,9 @@
   },
   "homepage": "https://github.com/AllenWooooo/rc-datetime-picker#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "blacklist": "^1.1.4",
     "classnames": "^2.2.5",
     "create-react-class": "^15.6.2",

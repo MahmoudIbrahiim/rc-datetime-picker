@@ -5,6 +5,9 @@ import classNames from 'classnames/bind';
 import {WEEKS, DAY_FORMAT} from '../constants';
 import {range as arrayRange, chunk} from '../utils';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+
 
 class Day extends Component {
   constructor(props) {
@@ -150,11 +153,19 @@ class Day extends Component {
       <div className="calendar-days" style={style}>
         <div className="calendar-nav">
           <button type="button" className="prev-month" onClick={this.changeMonth.bind(this, 'prev')}>
-            <i className="fa fa-angle-left"/>
+            <FontAwesomeIcon
+              icon={faAngleLeft}
+              color="black"
+              size="lg"
+            />
           </button>
           <span className="current-date" onClick={changePanel.bind(this, 'month', _moment)}>{_moment.format(dayFormat)}</span>
           <button type="button" className="next-month" onClick={this.changeMonth.bind(this, 'next')}>
-            <i className="fa fa-angle-right"/>
+            <FontAwesomeIcon
+              icon={faAngleRight}
+              color="black"
+              size="lg"
+            />
           </button>
         </div>
         <table>
